@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: put
+# key: put
+# binding: direct-keybinding
+# --
+console.log('${1:debug} ${2:value}: ' + $2);$0
