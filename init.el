@@ -1,13 +1,13 @@
 ;; ターミナル以外でEmacsを立ち上げてもpathが通るようにする
-(defun set-exec-path-from-shell-PATH ()
-    "Set up Emacs' `exec-path' and PATH environment variable to match that used by the user's shell.
-
-This is particularly useful under Mac OSX, where GUI apps are not started from a shell."
-    (interactive)
-    (let ((path-from-shell (replace-regexp-in-string "[ \t\n]*$" "" (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
-      (setenv "PATH" path-from-shell)
-      (setq exec-path (split-string path-from-shell path-separator))))
-(set-exec-path-from-shell-PATH)
+;; (defun set-exec-path-from-shell-PATH ()
+;;    "Set up Emacs' `exec-path' and PATH environment variable to match that used by the user's shell.
+;;
+;; This is particularly useful under Mac OSX, where GUI apps are not started from a shell."
+;;     (interactive)
+;;     (let ((path-from-shell (replace-regexp-in-string "[ \t\n]*$" "" (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
+;;       (setenv "PATH" path-from-shell)
+;;       (setq exec-path (split-string path-from-shell path-separator))))
+;; (set-exec-path-from-shell-PATH)
 
 (when load-file-name
   (setq user-emacs-directory (file-name-directory load-file-name)))
@@ -79,8 +79,8 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 (define-key global-map (kbd "C-o") 'other-window)
 
 ;; ディレクトリ閲覧中にrを押すとファイル名の編集などができる wdired モード
-(require 'wdired)
-(define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)
+;; (require 'wdired)
+;; (define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)
 
 
 (require 'whitespace)
@@ -135,12 +135,12 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 ;; auto-complete が発動するキー
 (ac-set-trigger-key "TAB")
 ;; 補完が出るまでの時間
-(setq ac-quick-help-delay 0.5)
+(setq ac-quick-help-delay 0.2)
 
 ;; yasnippet
 ;; see http://konbu13.hatenablog.com/entry/2014/01/12/113300
-(el-get-bundle yasnippet)
-(yas-global-mode 1)
+;; (el-get-bundle yasnippet)
+;; (yas-global-mode 1)
 
 ;; smart-cursor-color
 ;; カーソルとかハイライトで文字が見づらくなる現象を解消してくれる
@@ -150,28 +150,28 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 ;; term+
 ;; M-x term でターミナルが使えるようになるが、まだ設定の改良が必要
 ;; 終了する時は exit コマンド
-(el-get-bundle term+)
+;; (el-get-bundle term+)
 
 ;; powerline 見た目を変えるだけ
-(el-get-bundle emacs-powerline)
-(setq powerline-arrow-shape 'curve) ; これで角が変わるけどターミナルだと効かない
-(setq powerline-color1 "grey22")
-(setq powerline-color2 "grey40")
+;; (el-get-bundle emacs-powerline)
+;; (setq powerline-arrow-shape 'curve) ; これで角が変わるけどターミナルだと効かない
+;; (setq powerline-color1 "grey22")
+;; (setq powerline-color2 "grey40")
 
 ;; magit
 ;; 使い方参考:
 ;; http://gom.hatenablog.com/entry/20090524/1243170341
 ;; http://blog.kzfmix.com/entry/1334196627
 ;; emacs 24.4 以上が必要なようなのでとりあえず保留
-(el-get-bundle magit)
+;; (el-get-bundle magit)
 
 ;; flycheck エラーチェックを行う
 ;; see http://qiita.com/senda-akiha/items/cddb02cfdbc0c8c7bc2b
 ;; texinfo がインストールされていないと makeinfo が動かない
 ;; apt-get install texinfo
 ;; brew instal texinfo
-(el-get-bundle flycheck)
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; (el-get-bundle flycheck)
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
 ;; el-get で入れるとここでエラーが出る。
 ;; jsのモードを適切に設定するために必要なコマンドなので要調査
 ;; 詳細は上のURL
@@ -186,20 +186,20 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 
 ;; markdown-mode
 ;; TODO M-n M-p が衝突していると思うので削除する
-(el-get-bundle markdown-mode)
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+;; (el-get-bundle markdown-mode)
+;; (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 ;; scala-mode2
-(el-get-bundle scala-mode2)
+;; (el-get-bundle scala-mode2)
 ;; javadocとscaladocでは微妙にフォーマットが違うっぽい？
 ;; javadoc-style を採用
-(setq scala-indent:use-javadoc-style t)
+;; (setq scala-indent:use-javadoc-style t)
 
 ;; ensimeを導入したい場合は導入する
 
 ;; csharp-mode
 ;; https://github.com/josteink/csharp-mode
-(el-get-bundle josteink/csharp-mode)
+;; (el-get-bundle josteink/csharp-mode)
 
 ;; c++
 ;; 参考 http://futurismo.biz/archives/3071
@@ -229,7 +229,7 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 (add-hook 'web-mode-hook 'web-mode-hook)
 ;; scala.htmlだけはweb-mode-htmlで正しく表示できないので、html-modeをつかう
 ;; ただしhtml-modeでも
-(add-to-list 'auto-mode-alist '("\\.scala.html$" . html-mode))
+;; (add-to-list 'auto-mode-alist '("\\.scala.html$" . html-mode))
 
 ;; php-mode
 (el-get-bundle php-mode)
