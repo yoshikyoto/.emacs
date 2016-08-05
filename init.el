@@ -29,6 +29,7 @@
 (load "flycheck-init")
 (load "undo-tree-init")
 (load "neotree-init")
+(load "wdired-init")
 (load "helm-init")
 (load "web-mode-init")
 
@@ -36,8 +37,6 @@
 ;; 参考 http://futurismo.biz/archives/3071
 ;; clangを利用した補完をしてくれるclang-complete
 (el-get-bundle auto-complete-clang)
-
-
 
 ;; php-mode
 (el-get-bundle php-mode)
