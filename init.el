@@ -1,6 +1,9 @@
-;; ターミナル以外でEmacsを立ち上げてもpathが通るようにする
+;;; init.el -- emacs設定ファイル
+;;; Commentary:
+
+;; ターミナル以外でEmacsを立ち上げてもpathが通るようにする設定
 ;; (defun set-exec-path-from-shell-PATH ()
-;;    "Set up Emacs' `exec-path' and PATH environment variable to match that used by the user's shell.
+;;   "Set up Emacs' `exec-path' and PATH environment variable to match that used by the user's shell.
 ;;
 ;; This is particularly useful under Mac OSX, where GUI apps are not started from a shell."
 ;;     (interactive)
@@ -8,6 +11,8 @@
 ;;       (setenv "PATH" path-from-shell)
 ;;       (setq exec-path (split-string path-from-shell path-separator))))
 ;; (set-exec-path-from-shell-PATH)
+
+;;; Code:
 
 (when load-file-name
   (setq user-emacs-directory (file-name-directory load-file-name)))
@@ -40,10 +45,8 @@
 
 ;; php-mode
 (el-get-bundle php-mode)
-;; (add-hook 'php-mode-hook
-;;           '(lambda()
-;;              (setq indent-tabs-mode t)
-;;              (setq c-basic-offset 4)))
 
 ;; phpunitも含めいい感じに実行できるquickrunの読み込み
 (load "quickrun-init")
+
+;;; init.el ends here
