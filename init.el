@@ -30,7 +30,7 @@
 (load "whitespace-init") ; tabや行末のスペースを表示してくれたり、綺麗にしてくれたりするやつ
 (load "auto-complete-init")
 (load "yasnippet-init")
-;; (load "magit-init") ;maagit ;一部環境で動かないようなので保留
+(load "magit-init") ;maagit
 (load "flycheck-init")
 (load "undo-tree-init")
 (load "neotree-init")
@@ -48,5 +48,8 @@
 
 ;; phpunitも含めいい感じに実行できるquickrunの読み込み
 (load "quickrun-init")
+
+(add-to-list 'load-path (locate-user-emacs-file "modes"))
+(load "local-config") ; 環境依存の設定を書く
 
 ;;; init.el ends here

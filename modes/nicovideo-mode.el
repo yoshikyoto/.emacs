@@ -7,6 +7,7 @@
 (add-hook 'php-mode-hook
           '(lambda()
              (setq indent-tabs-mode t)
-             (setq c-basic-offset 4)))
+             (setq c-basic-offset 4)
+             (c-set-offset 'case-label '+))) ;switch-caseでインデントする
 
 ;;; nicovideo-mode.el ends here
