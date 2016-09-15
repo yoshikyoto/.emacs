@@ -1,4 +1,10 @@
+;;; neotree-init --- neotree周りの設定
+;;; Commentary:
+
+;;; Code:
+
 ;; ディレクトリ構造を表示してくれるneotreeの設定周り
+;; http://kiririmode.hatenablog.jp/entry/20150806/1438786800
 (el-get-bundle neotree)
 ;; F8でnetreee-windowが開くようにする
 (global-set-key [f8] 'neotree-toggle)
@@ -9,3 +15,13 @@
 ;; C-x }, C-x { でwindowサイズを変更できるよにする
 ;; でもなんか事あるごとに幅がリセットされる
 (setq neo-window-fixed-size nil)
+
+;; キーバインドをシンプルにする
+;; C: ルートディレクトリの変更
+;; c, +, p: ファイル作成
+;; d: ファイル削除
+;; r: ファイル名変更
+;; e: ディレクトリを開く
+(setq neo-keymap-style 'concise)
+
+;;; neotree-init.el ends here

@@ -1,3 +1,7 @@
+;;; quiclrun-init --- quickrunの設定
+;;; Commentary:
+
+;;; Code:
 ;; quickrunに関する設定
 (el-get-bundle quickrun)
 
@@ -17,3 +21,5 @@
   (:outputter . quickrun/phpunit-outputter)))
 ;; Test.phpサフィックスが付く場合はphpunitでquickrun
 (add-to-list 'quickrun-file-alist '("Test\\.php$" . "phpunit"))
+
+;;; quickrun-init.el ends here

@@ -1,4 +1,6 @@
-;; tabを表示したり、行末の空白を表示するやつ
+;;; whitespace -- tabを表示したり、行末の空白を表示するやつ
+;;; Commentary:
+;;; Code:
 (require 'whitespace)
 (setq whitespace-style '(face           ; faceで可視化
                          trailing       ; 行末
@@ -50,3 +52,5 @@
                                         :background my/bg-color)
 
 (global-whitespace-mode 1)
+
+;;; whitespace-init.el ends here

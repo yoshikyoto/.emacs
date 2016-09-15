@@ -1,4 +1,7 @@
-;; 色周りに関する設定
+;;; color-init -- 色周りに関する設定
+;;; Commentary:
+
+;;; Code:
 
 ;; smart-cursor-color
 ;; カーソルとかハイライトで文字が見づらくなる現象を解消してくれる
@@ -15,3 +18,5 @@
 ;; (setq powerline-arrow-shape 'curve) ; これで角が変わるけどターミナルだと効かない
 ;; (setq powerline-color1 "grey22")
 ;; (setq powerline-color2 "grey40")
+
+;;; color-init.el ends here
