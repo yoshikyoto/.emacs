@@ -2,9 +2,11 @@
 ;;; Commentary: マウスに関する設定
 
 ;; xtermのマウスポインタ関連のイベントを取得する
-;; TODO ドラッグでハイライトするのはいらない気がするけど銅やったら消せるか
-(xterm-mouse-mode t)
-(when (require 'mwheel nil 'noerror) (mouse-wheel-mode t))
+
+;; マウスホイールがイベントとれる場合はmouse-wheel-modeを有効化
+(when (require 'mwheel nil 'noerror)
+  (xterm-mouse-mode t)
+  (mouse-wheel-mode t))
 
 ;; ホイールでポインタを移動できるようにする
 (global-set-key [mouse-4] (kbd "C-p"))
