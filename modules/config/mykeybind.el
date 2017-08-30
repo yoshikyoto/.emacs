@@ -1,8 +1,11 @@
-;; デフォルトのキーバインドのカスタマイズについて書かれたファイル
+
+;;; Commentary: デフォルトのキーバインドのカスタマイズについて書かれたファイル
+
+;;; Code:
 
 ;; 矩形選択のキーバインドを C-x SPC に設定
 (cua-mode t)
-(setq cua-enable-cua-keys nil) ;; cua-mode の不要なキーバインドは除去
+(defvar cua-enable-cua-keys nil) ;; cua-mode の不要なキーバインドは除去
 (define-key global-map (kbd "C-x SPC") 'cua-set-rectangle-mark)
 
 ;; サスペンドをC-tにし、UndoをC-zにする
@@ -15,3 +18,8 @@
 
 ;; C-x o の other-window を C-o にバインド
 (define-key global-map (kbd "C-o") 'other-window)
+
+;; ディレクトリモード中にrを押すとファイル名の編集などができる wdired モードになるように
+(define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)
+
+;;; mykeybind.el ends here
