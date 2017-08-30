@@ -23,15 +23,13 @@
 (load "package/undo-tree")
 (load "package/neotree")
 (load "package/helm-ls-git")
-(load "coding-config-init") ;インデントの設定とか
 (load "package/web-mode")
 (load "package/hlinum")
+(load "package/php-mode")
 (load "package/auto-complete-clang")
 
 ;; (load "local-config") ; 環境依存の設定（gitで管理したくないもの）を置きます
-
-;; php-mode
-;; (el-get-bundle php-mode)
+(load "coding-config-init") ;インデントの設定とか
 
 ;; ocaml
 ;; (el-get-bundle tuareg-mode)
