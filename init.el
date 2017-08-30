@@ -21,7 +21,7 @@
 (load "package/yasnippet")
 (load "package/flycheck")
 (load "package/undo-tree")
-;; (load "neotree-init")
+(load "package/neotree")
 ;; (load "wdired-init")
 ;; (load "helm-init")
 (load "coding-config-init") ;インデントの設定とか
