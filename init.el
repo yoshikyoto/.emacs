@@ -25,7 +25,6 @@
 (load "package/helm-ls-git")
 (load "coding-config-init") ;インデントの設定とか
 (load "package/web-mode")
-;; (load "multiple-cursors-init")
 ;; (load "hlinum-init")
 ;; (load "scala-mode2-init")
 
