@@ -13,10 +13,10 @@
 (load "el-get")
 (defvar el-get-dir (locate-user-emacs-file "elisp")) ; el-getでダウンロードしたパッケージが入る
 
-(load "color-init")
 (load "config/mykeybind")
 (load "config/mouse")
 (load "config/whitespace")
+(load "package/smart-cursor-color")
 (load "package/auto-complete")
 (load "package/yasnippet")
 (load "package/flycheck")
