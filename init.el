@@ -23,7 +23,7 @@
 (load "config/mouse")
 (load "config/whitespace")
 (load "package/auto-complete")
-;; (load "yasnippet-init")
+(load "package/yasnippet")
 ;; (load "magit-init") ; magitが使えない環境がたまにあるのでデフォルトでは読み込まないようにしておく
 ;; (load "flycheck-init")
 ;; (load "undo-tree-init")
