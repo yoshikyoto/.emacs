@@ -22,8 +22,7 @@
 (load "package/flycheck")
 (load "package/undo-tree")
 (load "package/neotree")
-;; (load "wdired-init")
-;; (load "helm-init")
+(load "package/helm-ls-git")
 (load "coding-config-init") ;インデントの設定とか
 ;; (load "web-mode-init")
 ;; (load "multiple-cursors-init")
