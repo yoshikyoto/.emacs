@@ -5,12 +5,6 @@
 
 ;; load-path の設定
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
-
 (when load-file-name (setq user-emacs-directory (file-name-directory load-file-name)))
 (add-to-list 'load-path (locate-user-emacs-file "modules"))
 
@@ -58,5 +52,11 @@
 ;; (load "quickrun-init")
 
 ;; (add-to-list 'load-path (locate-user-emacs-file "modes"))
+
+;; emacs 24 以降からは pckage.el が標準で使われるようになり、この行が勝手に追加される
+;; el-get と競合するが、この行を消しても勝手に追加されてしまうので、
+;; init.el の最後にこの行を持ってくるか、コメントアウトしなければならない
+;; (package-initialize)
+
 
 ;;; init.el ends here
