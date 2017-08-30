@@ -21,10 +21,3 @@
   (setq indent-tabs-mode nil)
   (setq tab-width 4))
 (add-hook 'web-mode-hook 'web-mode-hook)
-
-;; デフォルトのやつもtabにしちゃう
-;; (setq-default indent-tabs-mode t)
-
-;; scala.htmlだけはweb-mode-htmlで正しく表示できないので、html-modeをつかう
-;; ただしhtml-modeでも
-;; (add-to-list 'auto-mode-alist '("\\.scala.html$" . html-mode))
