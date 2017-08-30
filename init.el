@@ -24,7 +24,6 @@
 (load "config/whitespace")
 (load "package/auto-complete")
 (load "package/yasnippet")
-;; (load "magit-init") ; magitが使えない環境がたまにあるのでデフォルトでは読み込まないようにしておく
 ;; (load "flycheck-init")
 ;; (load "undo-tree-init")
 ;; (load "neotree-init")
