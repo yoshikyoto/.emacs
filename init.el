@@ -20,7 +20,7 @@
 (load "package/auto-complete")
 (load "package/yasnippet")
 (load "package/flycheck")
-;; (load "undo-tree-init")
+(load "package/undo-tree")
 ;; (load "neotree-init")
 ;; (load "wdired-init")
 ;; (load "helm-init")
