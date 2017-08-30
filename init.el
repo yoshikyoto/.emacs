@@ -26,13 +26,9 @@
 (load "coding-config-init") ;インデントの設定とか
 (load "package/web-mode")
 (load "package/hlinum")
+(load "package/auto-complete-clang")
 
 ;; (load "local-config") ; 環境依存の設定（gitで管理したくないもの）を置きます
-
-;; c++
-;; 参考 http://futurismo.biz/archives/3071
-;; clangを利用した補完をしてくれるclang-complete
-;; (el-get-bundle auto-complete-clang)
 
 ;; php-mode
 ;; (el-get-bundle php-mode)
