@@ -26,8 +26,6 @@
 (load "coding-config-init") ;インデントの設定とか
 (load "package/web-mode")
 (load "package/hlinum")
-;; (load "scala-mode2-init")
-
 
 ;; (load "local-config") ; 環境依存の設定（gitで管理したくないもの）を置きます
 
