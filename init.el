@@ -21,7 +21,7 @@
 (load "color-init")
 (load "config/mykeybind")
 (load "config/mouse")
-;; (load "whitespace-init") ; tabや行末のスペースを表示してくれたり、綺麗にしてくれたりするやつ
+(load "config/whitespace")
 ;; (load "auto-complete-init")
 ;; (load "yasnippet-init")
 ;; (load "magit-init") ; magitが使えない環境がたまにあるのでデフォルトでは読み込まないようにしておく
@@ -30,7 +30,7 @@
 ;; (load "neotree-init")
 ;; (load "wdired-init")
 ;; (load "helm-init")
-;; (load "coding-config-init") ;インデントの設定とか
+(load "coding-config-init") ;インデントの設定とか
 ;; (load "web-mode-init")
 ;; (load "multiple-cursors-init")
 ;; (load "hlinum-init")
