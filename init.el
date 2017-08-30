@@ -27,19 +27,15 @@
 (load "package/hlinum")
 (load "package/php-mode")
 (load "package/auto-complete-clang")
+(load "package/quickrun")
+(load "coding-config-init")
 
-;; (load "local-config") ; 環境依存の設定（gitで管理したくないもの）を置きます
-(load "coding-config-init") ;インデントの設定とか
-
-;; phpunitも含めいい感じに実行できるquickrunの読み込み
-;; (load "quickrun-init")
-
-;; (add-to-list 'load-path (locate-user-emacs-file "modes"))
+;; 環境依存の設定（gitで管理したくないもの）を置きます
+(load "local/init")
 
 ;; emacs 24 以降からは pckage.el が標準で使われるようになり、この行が勝手に追加される
 ;; el-get と競合するが、この行を消しても勝手に追加されてしまうので、
 ;; init.el の最後にこの行を持ってくるか、コメントアウトしなければならない
 ;; (package-initialize)
-
 
 ;;; init.el ends here
