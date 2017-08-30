@@ -22,7 +22,7 @@
 (load "config/mykeybind")
 (load "config/mouse")
 (load "config/whitespace")
-;; (load "auto-complete-init")
+(load "package/auto-complete")
 ;; (load "yasnippet-init")
 ;; (load "magit-init") ; magitが使えない環境がたまにあるのでデフォルトでは読み込まないようにしておく
 ;; (load "flycheck-init")
