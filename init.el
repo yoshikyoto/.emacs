@@ -16,6 +16,7 @@
 (load "config/mykeybind")
 (load "config/mouse")
 (load "config/whitespace")
+(load "config/indent")
 (load "package/smart-cursor-color")
 (load "package/auto-complete")
 (load "package/yasnippet")
@@ -28,7 +29,6 @@
 (load "package/php-mode")
 (load "package/auto-complete-clang")
 (load "package/quickrun")
-(load "coding-config-init")
 
 ;; 環境依存の設定（gitで管理したくないもの）を置きます
 (load "local/init")
