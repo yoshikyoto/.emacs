@@ -6,11 +6,11 @@
 ;; 環境によってはmagitが動かないこともあるのでとりあえずここに
 ;; (load "package/magit")
 
-;; (load "local/smile/init")
-(load "mode/nico-php-mode")
+(load "mode/nico/nico-php-mode")
 ;; (add-hook 'php-mode-hook 'nico-php-mode) ;php-modeの時にNicoモード起動
 
-(load "mode/smile-php-mode")
+(load "mode/smile/smile-php-mode")
 (add-hook 'php-mode-hook 'smile-php-mode) ;php-modeの時にSmileモード起動
+(load "local/smile/local-vagrant")
 
 ;;; local-config.el ends here
