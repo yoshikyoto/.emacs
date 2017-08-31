@@ -6,4 +6,7 @@
 ;; 環境によってはmagitが動かないこともあるのでとりあえずここに
 ;; (load "package/magit")
 
+;; (load "local/smile/init")
+(load "mode/nico-php-mode")
+
 ;;; local-config.el ends here

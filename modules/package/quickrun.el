@@ -22,4 +22,8 @@
 ;; Test.phpサフィックスが付く場合はphpunitでquickrun
 (add-to-list 'quickrun-file-alist '("Test\\.php$" . "phpunit"))
 
+;; M-r は window.el の move-to-window-line-top-bottom だが
+;; M-<, M-> を使えば問題ないかなってことでQuickrunに
+(global-set-key (kbd "M-r") 'quickrun)
+
 ;;; quickrun-init.el ends here
