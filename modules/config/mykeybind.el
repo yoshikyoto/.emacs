@@ -1,4 +1,3 @@
-
 ;;; Commentary: デフォルトのキーバインドのカスタマイズについて書かれたファイル
 
 ;;; Code:
@@ -13,8 +12,8 @@
 (define-key global-map (kbd "C-t") 'suspend-frame)
 
 ;; M-x, M-p はそれぞれページ単位移動に設定
-(define-key global-map (kbd "M-n") (kbd "C-v"))
-(define-key global-map (kbd "M-p") (kbd "M-v"))
+(define-key global-map (kbd "M-n") 'scroll-up)
+(define-key global-map (kbd "M-p") 'scroll-down)
 
 ;; C-x o の other-window を C-o にバインド
 (define-key global-map (kbd "C-o") 'other-window)
