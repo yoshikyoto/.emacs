@@ -17,6 +17,7 @@
 (load "config/mouse")
 (load "config/whitespace")
 (load "config/indent")
+(load "config/javascript")
 (load "package/smart-cursor-color")
 (load "package/auto-complete")
 (load "package/yasnippet")
