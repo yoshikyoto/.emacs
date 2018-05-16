@@ -33,6 +33,8 @@
 (load "package/kotlin-mode")
 (load "package/auto-complete-clang")
 (load "package/quickrun")
+(load "package/go-mode")
+;; editorconfigをロードすることで、各modeの設定をeditorconfigで上書き
 (load "package/editorconfig")
 
 ;; 環境依存の設定（gitで管理したくないもの）を置きます
