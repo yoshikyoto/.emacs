@@ -1,7 +1,11 @@
-# コア開発向けemacs
+## Usage
 
-* phpのインデントはスペースじゃなくてtabになるようになってる
-* 環境依存のパッケージとかはコメントアウトされている
+```
+$ cd ~/
+$ git clone git@github.com:yoshikyoto/.emacs.git .emacs.d
+$ git submodule init
+$ git submodule update
+```
 
 ## .zshrc
 
