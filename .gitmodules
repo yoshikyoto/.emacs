@@ -1,0 +1,3 @@
+[submodule "modules/package/phpdocumentor"]
+	path = modules/package/phpdocumentor
+	url = git@github.com:yoshikyoto/phpdocumentor.el.git
