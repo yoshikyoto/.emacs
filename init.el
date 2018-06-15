@@ -17,6 +17,7 @@
 (load "config/mouse")
 (load "config/whitespace")
 (load "config/indent")
+(load "config/javascript")
 (load "package/smart-cursor-color")
 (load "package/auto-complete")
 (load "package/yasnippet")
@@ -27,8 +28,14 @@
 (load "package/web-mode")
 (load "package/hlinum")
 (load "package/php-mode")
+(load "package/scala-mode")
+(load "package/dart-mode")
+(load "package/kotlin-mode")
 (load "package/auto-complete-clang")
 (load "package/quickrun")
+(load "package/go-mode")
+;; editorconfigをロードすることで、各modeの設定をeditorconfigで上書き
+(load "package/editorconfig")
 
 ;; 環境依存の設定（gitで管理したくないもの）を置きます
 (load "local/init")
@@ -39,3 +46,16 @@
 ;; (package-initialize)
 
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(global-linum-mode t)
+ '(package-selected-packages (quote (dart-mode smart-cursor-color let-alist))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

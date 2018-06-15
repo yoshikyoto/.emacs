@@ -1,3 +1,6 @@
 [submodule "modules/package/phpdocumentor"]
 	path = modules/package/phpdocumentor
 	url = git@github.com:yoshikyoto/phpdocumentor.el.git
+[submodule "el-get"]
+	path = el-get
+	url = git@github.com:dimitri/el-get.git
