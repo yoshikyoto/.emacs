@@ -7,10 +7,12 @@
 ;; (load "package/magit")
 
 (load "mode/nico/nico-php-mode")
-;; (add-hook 'php-mode-hook 'nico-php-mode) ;php-modeの時にNicoモード起動
+(add-hook 'php-mode-hook 'nico-php-mode) ;php-modeの時にNicoモード起動
+;; PHPUnitコマンド
+(load "local/nico/core-phpunit")
 
-(load "mode/smile/smile-php-mode")
-(add-hook 'php-mode-hook 'smile-php-mode) ;php-modeの時にSmileモード起動
-(load "local/smile/local-vagrant")
+;; (load "mode/smile/smile-php-mode")
+;; (add-hook 'php-mode-hook 'smile-php-mode) ;php-modeの時にSmileモード起動
+;; (load "local/smile/local-vagrant")
 
 ;;; local-config.el ends here
