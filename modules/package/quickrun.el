@@ -22,6 +22,12 @@
 ;; Test.phpサフィックスが付く場合はphpunitでquickrun
 (add-to-list 'quickrun-file-alist '("Test\\.php$" . "phpunit"))
 
+;; kts
+(quickrun-add-command "kotlins"
+  '((:command . "kotlinc")
+    (:exec . "%c -script %s")))
+(add-to-list 'quickrun-file-alist '("\\.kts$" . "kotlins"))
+
 ;; M-r は window.el の move-to-window-line-top-bottom だが
 ;; M-<, M-> を使えば問題ないかなってことでQuickrunに
 (global-set-key (kbd "M-r") 'quickrun)
