@@ -18,6 +18,7 @@
 (load "config/whitespace")
 (load "config/indent")
 (load "config/javascript")
+(load "config/ruby")
 (load "package/smart-cursor-color")
 (load "package/auto-complete")
 (load "package/yasnippet")
