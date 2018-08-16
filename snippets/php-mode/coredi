@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: coredi
+# key: coredi
+# --
+namespace nico\config\di;
+
+use Aura\Di\Config;
+use Aura\Di\Container;
+
+class User extends Config {
+	/**
+	 * @param Container $di
+	 * @return void
+	 * @throws \Aura\Di\Exception\ContainerLocked
+	 * @throws \Aura\Di\Exception\ServiceNotObject
+	 */
+	public function define(Container $di) {
+		$di->params[::class] = [
+			'' => $di->lazyGet(::class),
+		];
+		$di->set(::class, $di->lazyNew(::class));
+	}
+
+	/**
+	 * @param Container $di
+	 * @return void
+	 */
+	public function modify(Container $di) {
+	}
+}
