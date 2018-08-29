@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ubtc
+# key: ubtc
+# --
+use nico\test\phpunit\lib\BaseTestCase;

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: uset
+# key: uset
+# --
+use nico\test\phpunit\lib\BaseTestCase;
+use Mockery as m;

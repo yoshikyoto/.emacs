@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: usem
+# key: usem
+# --
+use Mockery as m;

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: coretest
+# key: coretest
+# --
+<?php
+
+use nico\test\phpunit\lib\BaseTestCase;
+use Mockery as m;
+
+class Test extends BaseTestCase {
+}

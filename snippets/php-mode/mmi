@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mmi
+# key: mmi
+# --
+m::MockInterface

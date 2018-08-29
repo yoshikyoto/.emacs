@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: PHPUnit_Framework_TestCase
+# key: PHPUnit_Framework_TestCase
+# --
+BaseTestCase

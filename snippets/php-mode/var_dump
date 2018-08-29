@@ -1,6 +1,5 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: var_dump
-# key: vd
-# binding: direct-keybinding
+# -*- mode: snippet -*-
+# name: ar
+# key: ar
 # --
-var_dump($1);
+andReturn()
