@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: plog
+# key: plog
+# --
+error_log(implode("\t", [
+    __METHOD__,
+    __LINE__,
+    var_export("", true),
+    PHP_EOL,
+]), 3, '/home/utakata/log/debug.log');
