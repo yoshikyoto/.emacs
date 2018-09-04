@@ -1,7 +1,7 @@
-(defun core-phpunit ()
+(defun nvapi-phpunit ()
   (interactive)
   (async-shell-command
    (concat
     "cd ~ && "
-    "phpunit --bootstrap=core/test/phpunit/phpunit.php "
+    "phpunit --bootstrap=nvapi/test/phpunit/bootstrap.php "
     buffer-file-name)))
