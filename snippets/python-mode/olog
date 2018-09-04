@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: olog
+# key: olog
+# --
+import logging
+logger = logging.getLogger('debug_tmp')
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter(
+    '%(asctime)s - %(filename)s:%(lineno)d in %(name)s() - '
+    '%(levelname)s - %(message)s')
+handler = logging.FileHandler('/var/log/marimba/debug.log')
+handler.setLevel(logging.DEBUG)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
