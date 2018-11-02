@@ -1,27 +1,3 @@
-(defun core-phpunit ()
-  (interactive)
-  (async-shell-command
-   (concat
-    "cd ~ && "
-    "phpunit --bootstrap=core/test/phpunit/phpunit.php "
-    buffer-file-name)))
-
-(defun core-phpunit-function ()
-  (interactive)
-  (async-shell-command
-   (concat
-    "cd ~ && "
-    "phpunit --bootstrap=core/test/phpunit/phpunit.php "
-    "--filter=\""
-    (php-current-public-method-name)
-    "\" "
-    buffer-file-name)))
-
-
-(defun get-buffer-file-name ()
-  (interactive)
-  (message buffer-file-name))
-
 (defun replace-mockery ()
   (interactive)
 
