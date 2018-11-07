@@ -12,5 +12,5 @@ error_log(
 		var_export($var, true),
 		PHP_EOL,
 	], "\t"),
-	3, '/home/yoshiyuki_sakamoto/utakatalog/php_file_name.log'
+	3, '/home/yoshiyuki_sakamoto/utakata_debug.log'
 );
