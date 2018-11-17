@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useh
+# key: useh
+# --
+use Hamcrest\Matchers as h;
