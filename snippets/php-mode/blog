@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: blog
+# key: blog
+# --
+error_log(var_export([
+	__METHOD__
+], true), 3, '/var/log/booklife-debug.log');
