@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: diset
+# key: diset
+# --
+$di->set($1::class, $di->lazyNew($1::class));
