@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: GetController
+# key: GetController
+# --
+class GetController {
+
+	public function __construct($container) {
+		/** @var \nico\app\NicovideoWeb $app */
+		$app = $container->get('nicovideoWeb');
+	}
+
+	public function __invoke(Request $request, Response $response, array $args): Response {
+		$0
+	}
+
+}

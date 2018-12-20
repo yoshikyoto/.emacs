@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: diget
+# key: diget
+# --
+'$1' => $di->lazyGet($2::class)

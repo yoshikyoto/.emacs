@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: slimget
+# key: slimget
+# --
+$slimApp->get('$1', \nvapi\controller\$2::class);
