@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: method
+# key: method
+# --
+def ${1:function}(self$2) -> ${3:hinting}:
