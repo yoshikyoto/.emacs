@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: defrequest
+# key: defrequest
+# --
+def $1(request: HttpRequest):
