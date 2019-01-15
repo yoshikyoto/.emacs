@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useSessionUserId
+# key: useSessionUserId
+# --
+use nvapi\component\session\SessionUserId;

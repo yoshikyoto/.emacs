@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useLanguage
+# key: useLanguage
+# --
+use nico\domain\i18n\Language;

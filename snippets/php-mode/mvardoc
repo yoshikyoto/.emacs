@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mvardoc
+# key: mvardoc
+# --
+/** @var m\mockinterface|$0 */
