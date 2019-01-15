@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: covers
+# key: covers
+# --
+@covers ::$1
