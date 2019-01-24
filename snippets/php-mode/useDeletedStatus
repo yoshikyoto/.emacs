@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useDeletedStatus
+# key: useDeletedStatus
+# --
+use nico\domain\video\DeletedStatus;

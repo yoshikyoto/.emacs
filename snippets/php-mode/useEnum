@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useEnum
+# key: useEnum
+# --
+use MyCLabs\Enum\Enum;

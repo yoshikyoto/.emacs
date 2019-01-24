@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: funcparam
+# key: funcparam
+# --
+$1 $$1,

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: enumconst
+# key: enumconst
+# --
+const $1 = '$1'

@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: this->getMock
-# key: this->getMock
+# name: mock
+# key: mock
 # --
-m::mock
+m::mock($1::class);

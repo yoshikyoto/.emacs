@@ -2,4 +2,4 @@
 # name: once
 # key: once
 # --
-once()->
+once()

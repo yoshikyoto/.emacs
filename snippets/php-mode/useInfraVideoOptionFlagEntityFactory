@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useInfraVideoOptionFlagEntityFactory
+# key: useInfraVideoOptionFlagEntityFactory
+# --
+use nico\infra\video\option_flag\VideoOptionFlagEntityFactory;

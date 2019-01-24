@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: getter
+# key: getter
+# --
+/**
+ * @return $1
+ */
+public function get$2() {
+	return $this->$2;
+}

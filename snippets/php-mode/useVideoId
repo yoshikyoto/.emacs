@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useVideoId
+# key: useVideoId
+# --
+use nico\domain\video\VideoId;

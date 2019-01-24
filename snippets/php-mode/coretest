@@ -6,6 +6,21 @@
 
 use nico\test\phpunit\lib\BaseTestCase;
 use Mockery as m;
+use $1
 
-class Test extends BaseTestCase {
+/**
+ * @coversDefaultClass $1
+ */
+class $1Test extends BaseTestCase {
+
+	public function setUp() {
+		parent::setUp();
+	}
+
+	/**
+	 * @test
+	 * @covers ::metdodName
+	 */
+	public function test() {
+	}
 }

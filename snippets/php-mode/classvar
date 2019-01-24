@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: classvar
+# key: classvar
+# --
+/**
+ * @var $1
+ */
+private $$1;

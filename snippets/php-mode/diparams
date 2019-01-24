@@ -1,7 +1,5 @@
 # -*- mode: snippet -*-
-# name: diparams
-# key: diparams
+# name: param
+# key: param
 # --
-$di->params[$1::class] = [
-	'$2' => $di->lazyGet($3::class),
-];
+@param $1 $$1

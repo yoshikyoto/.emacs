@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: docMethodStatic
+# key: docMethodStatic
+# --
+@method static $this $1()

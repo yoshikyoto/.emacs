@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: construct
+# key: construct
+# --
+${1:private} function __construct() {
+	parent::__construct();
+}
