@@ -2,6 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 (require 'whitespace)
+
+;; コードを書いていると、
+;; タブと
+;; 何を可視化するかをここで決める
 (setq whitespace-style
       '(face           ; faceで可視化 以下何を可視化するか
         trailing       ; 行末
@@ -11,6 +15,9 @@
         space-mark     ; 表示のマッピング
         tab-mark))
 
+;; 全角スペースとタブを可視化する
+;; 全角スペースやタブが半角スペースに混ざっているとわからないのでわかるようにしておきます
+;; ここでは文字コードとどう可視化するかを設定します。
 (setq whitespace-display-mappings
       '((space-mark ?\u3000 [?\u25a1]) ; 全角スペースは□で可視化
         ;; WARNING: the mapping below has a problem.
@@ -23,10 +30,12 @@
 ;; スペースは全角のみを可視化
 (setq whitespace-space-regexp "\\(\u3000+\\)")
 
-;; 保存前に自動でクリーンアップ
+;; 保存前にファイル末尾の無駄な改行や、
+;; 行末尾の無駄なスペースを自動でクリーンアップする設定を入れます
 (setq whitespace-action '(auto-cleanup))
 
 ;; 色の設定
+;; 背景色を設定して、ちゃんと見やすい用意可視化されるようにします。
 (defvar my/bg-color "#232323")
 
 ;; 行末の不要な空白の色
@@ -51,7 +60,7 @@
 (set-face-attribute 'whitespace-empty nil
                     :background my/bg-color)
 
-;; whitespace-mode を有効に
+;; whitespace-mode を有効にする
 (global-whitespace-mode 1)
 
-;;; whitespace-init.el ends here
+;;; whitespace.el ends here
