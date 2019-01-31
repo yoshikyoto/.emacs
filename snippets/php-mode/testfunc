@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: testfunc
+# key: testfunc
+# --
+/**
+ * @test
+ * @covers ::$1
+ */
+public function $2() {$0
+}
