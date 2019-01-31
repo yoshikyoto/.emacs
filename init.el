@@ -30,6 +30,7 @@
 (load "package/web-mode")
 (load "package/hlinum")
 (load "package/php-mode")
+(load "package/ac-php")
 (load "package/scala-mode")
 (load "package/dart-mode")
 (load "package/kotlin-mode")
