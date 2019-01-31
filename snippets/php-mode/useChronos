@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useChronos
+# key: useChronos
+# --
+use Cake\Chronos\Chronos;

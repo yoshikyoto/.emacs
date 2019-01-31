@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: assertInstanceOf
+# key: assertInstanceOf
+# --
+$this->assertInstanceOf($1::class, $$2);

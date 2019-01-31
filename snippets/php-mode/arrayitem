@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: arrayitem
+# key: arrayitem
+# --
+'$1' => $$1
