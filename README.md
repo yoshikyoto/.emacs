@@ -16,6 +16,12 @@ git submodule init
 git submodule update
 ```
 
+## ディレクトリ構成
+
+* bin - 便利なシェルスクリプトとかはここに
+* modules - 個人的な設定や、パッケージのインストールなどのelispを置く。詳細は `modules/README.md` を参照
+* snippets - yasnippetで作成されたスニペットたち
+
 ## Emacsのインストール方法
 
 ### Emacsのビルドに必要なパッケージのインストールなど
