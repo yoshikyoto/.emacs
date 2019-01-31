@@ -11,7 +11,7 @@
 ;;; パッケージ管理 el-get の設定 https://github.com/dimitri/el-get
 (add-to-list 'load-path (locate-user-emacs-file "el-get"))
 (load "el-get")
-(defvar el-get-dir (locate-user-emacs-file "elisp")) ; el-getでダウンロードしたパッケージが入る
+(setq el-get-dir (locate-user-emacs-file "elisp")) ; el-getでダウンロードしたパッケージが入る
 
 (load "config/mykeybind")
 (load "config/mouse")
@@ -25,6 +25,7 @@
 (load "package/flycheck")
 (load "package/undo-tree")
 (load "package/neotree")
+(load "package/magit")
 (load "package/helm-ls-git")
 (load "package/web-mode")
 (load "package/hlinum")
@@ -37,6 +38,7 @@
 (load "package/go-mode")
 ;; editorconfigをロードすることで、各modeの設定をeditorconfigで上書き
 (load "package/editorconfig")
+(load "function/eval-init")
 
 ;; 環境依存の設定（gitで管理したくないもの）を置きます
 (load "local/init")
@@ -53,7 +55,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(global-linum-mode t)
- '(package-selected-packages (quote (dart-mode smart-cursor-color let-alist))))
+ '(package-selected-packages (quote (dart-mode smart-cursor-color let-alist)))
+ '(safe-local-variable-values (quote ((php-project-root . git)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
