@@ -2,6 +2,10 @@
 
 Emacsの設定ファイルです。
 
+## dependency
+
+* el-get
+
 ## Usage
 
 ```
