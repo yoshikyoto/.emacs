@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: exex
+# key: exex
+# --
+$this->expectException($1::class);
