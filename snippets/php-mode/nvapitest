@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: nvapitest
+# key: nvapitest
+# --
+<?php
+
+use nico\test\phpunit\BaseTestCase;
+use Mockery as m;
+use $2
+
+/**
+ * @coversDefaultClass $2
+ */
+class $1Test extends BaseTestCase {
+
+	public function setUp() {
+		parent::setUp();
+	}
+
+	/**
+	 * @test
+	 * @covers ::metdodName
+	 */
+	public function test() {
+	}
+}
