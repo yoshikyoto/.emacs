@@ -4,12 +4,12 @@
 # --
 <?php
 
-use nico\test\phpunit\BaseTestCase;
+use nvapi\test\phpunit\BaseTestCase;
 use Mockery as m;
-use $2
+use $1;
 
 /**
- * @coversDefaultClass $2
+ * @coversDefaultClass $1
  */
 class $1Test extends BaseTestCase {
 

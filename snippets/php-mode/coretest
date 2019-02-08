@@ -6,7 +6,7 @@
 
 use nico\test\phpunit\lib\BaseTestCase;
 use Mockery as m;
-use $1
+use $1;
 
 /**
  * @coversDefaultClass $1
