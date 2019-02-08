@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
 # name: asT
-# key: atT
+# key: asT
 # --
 $this->assertTrue($1);
