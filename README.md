@@ -1,6 +1,9 @@
 # Emacsの設定ファイル
 
-Emacsの設定ファイルです。
+Emacsの設定たち。
+
+* Emacsのインストール方法はこのREADMEの下部に記載してあります。
+* modules/config や modules/package ディレクトリ以下には、どのようなパッケージを導入しているかや、各パッケージの設定や詳細についても記載していますので参考にしてください。
 
 ## dependency
 
