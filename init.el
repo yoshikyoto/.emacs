@@ -14,6 +14,7 @@
 (setq el-get-dir (locate-user-emacs-file "elisp")) ; el-getでダウンロードしたパッケージが入る
 
 (load "config/mykeybind")
+(load "config/language")
 (load "config/mouse")
 (load "config/whitespace")
 (load "config/indent")

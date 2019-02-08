@@ -1,10 +1,5 @@
-(defun core-phpunit ()
-  (interactive)
-  (async-shell-command
-   (concat
-    "cd ~ && "
-    "phpunit --bootstrap=core/test/phpunit/phpunit.php "
-    buffer-file-name)))
+;; TODO php-modeの機能で関数名を取るようにしたうえで nico-php-mode の方に移動する
+;; http://www.utakata.work/entry/20181201/1543629600
 
 (defun core-phpunit-function ()
   (interactive)
@@ -185,6 +180,20 @@
 
   (beginning-of-buffer)
   (replace-regexp "$this->identicalTo(" "h::identicalTo(")
+  )
+
+;; equalToで比較しなくても行けるので消しちゃうやつ
+(defun remove-hamcrest-equalto ()
+  (interactive)
+  (beginning-of-buffer)
+  (replace-regexp "h::equalTo(\\([^()]+\\))" "\\1")
+  (beginning-of-buffer)
+  )
+
+(defun replace-logicalor-hamcrest ()
+  (interactive)
+  (beginning-of-buffer)
+  (replace-regexp "$this->logicalOr(" "h::anyOf(")
   )
 
 ;; 自動で直すのは辛いので手動で頑張ってもらう
