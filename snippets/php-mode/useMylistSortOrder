@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useMylistSortOrder
+# key: useMylistSortOrder
+# --
+use nico\domain\mylist_new\constants\MylistSortOrder;

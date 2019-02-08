@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: useListingVideo
+# key: useListingVideo
+# --
+use nico\ui\listing_video\ListingVideo;
