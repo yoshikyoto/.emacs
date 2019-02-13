@@ -34,6 +34,7 @@
 (load "package/scala-mode")
 (load "package/dart-mode")
 (load "package/kotlin-mode")
+(load "package/vue-mode")
 (load "package/auto-complete-clang")
 (load "package/quickrun")
 (load "package/go-mode")
