@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: asS
+# key: asS
+# --
+$this->assertSame($1, $2);

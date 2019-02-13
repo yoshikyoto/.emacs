@@ -15,7 +15,6 @@
 (load "local/nico/core-phpunit")
 (load "local/nico/nvapi-phpunit")
 (load "local/nico/ci")
-(load "local/nico/find-core-phpunit")
 
 ;; (load "mode/smile/smile-php-mode")
 ;; (add-hook 'php-mode-hook 'smile-php-mode) ;php-modeの時にSmileモード起動

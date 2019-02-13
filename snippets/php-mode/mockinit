@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mockinit
+# key: mockinit
+# --
+$this->$1 = m::mock($0$1::class);

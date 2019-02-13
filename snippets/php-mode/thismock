@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: thismock
+# key: thismock
+# --
+$this->$1 = m::mock($0$1::class);

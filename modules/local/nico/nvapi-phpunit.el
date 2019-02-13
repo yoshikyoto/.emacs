@@ -1,10 +1,5 @@
-(defun nvapi-phpunit ()
-  (interactive)
-  (async-shell-command
-   (concat
-    "cd ~ && "
-    "phpunit --bootstrap=nvapi/test/phpunit/bootstrap.php "
-    buffer-file-name)))
+;; TODO php-modeの機能で関数名を取るようにしたうえで nico-php-mode の方に移動する
+;; http://www.utakata.work/entry/20181201/1543629600
 
 (defun nvapi-phpunit-function ()
   (interactive)

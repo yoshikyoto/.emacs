@@ -1,10 +1,10 @@
 # -*- mode: snippet -*-
-# name: coretest
-# key: coretest
+# name: nvapitest
+# key: nvapitest
 # --
 <?php
 
-use nico\test\phpunit\lib\BaseTestCase;
+use nvapi\test\phpunit\BaseTestCase;
 use Mockery as m;
 use $1;
 
