@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: asNN
+# key: asNN
+# --
+$this->assertNotNull($1);
