@@ -5,6 +5,15 @@ Emacsの設定たち。
 * Emacsのインストール方法はこのREADMEの下部に記載してあります。
 * modules/config や modules/package ディレクトリ以下には、どのようなパッケージを導入しているかや、各パッケージの設定や詳細についても記載していますので参考にしてください。
 
+
+
+## ディレクトリ構成
+
+* bin - 便利なシェルスクリプトとかはここに
+* modules - 個人的な設定や、パッケージのインストールなどのelispを置く。詳細は `modules/README.md` を参照
+  * 
+* snippets - yasnippetで作成されたスニペットたち
+
 ## dependency
 
 * el-get
@@ -18,12 +27,6 @@ cd .emacs.d
 git submodule init
 git submodule update
 ```
-
-## ディレクトリ構成
-
-* bin - 便利なシェルスクリプトとかはここに
-* modules - 個人的な設定や、パッケージのインストールなどのelispを置く。詳細は `modules/README.md` を参照
-* snippets - yasnippetで作成されたスニペットたち
 
 ## Emacsのインストール方法
 
