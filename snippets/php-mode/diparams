@@ -1,5 +1,7 @@
 # -*- mode: snippet -*-
-# name: param
-# key: param
+# name: diparams
+# key: diparams
 # --
-@param $1 $$1
+$di->params[$1::class] = [
+    $0
+];
