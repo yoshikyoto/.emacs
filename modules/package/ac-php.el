@@ -16,8 +16,11 @@
 ;; タグの生成は完了しています。
 
 ;; 参考:
-;; Emacs + ac-php で PHP の最強コード補完 - Qiita
-;; https://qiita.com/nanasess/items/b5dc322bac34107cf067
+;; - Emacs + ac-php で PHP の最強コード補完 - Qiita
+;;   - https://qiita.com/nanasess/items/b5dc322bac34107cf067
+
+;; 導入は公式のREADMEが一番わかり易いかも...
+;; - https://github.com/xcwen/ac-php
 
 ;;; Code:
 

@@ -32,6 +32,6 @@
 
 ;; flycheckを利用してエラーを表示する
 ;; とりあえず常に有効にしておく
-(flyspell-mode 1)
+(setq-default flyspell-mode 1)
 
 ;;; aspell.el ends here
