@@ -25,6 +25,7 @@
 (load "package/auto-complete")
 (load "package/yasnippet")
 (load "package/flycheck")
+(load "package/aspell") ;; flycheckに依存
 (load "package/undo-tree")
 (load "package/neotree")
 ;; (load "package/magit")
