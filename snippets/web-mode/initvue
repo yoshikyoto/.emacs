@@ -1,0 +1,42 @@
+# -*- mode: snippet -*-
+# name: initvue
+# key: initvue
+# --
+<template>
+  <!-- rootの要素は単一要素である必要がある -->
+  <div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: '',
+    components: {
+    },
+    props: {
+      property: {
+        // Number, String, Boolean, Object, ...
+        type: String,
+        required: true
+      }
+    },
+    data () {
+      return {
+      }
+    },
+    computed: {
+      function propertylike() {
+        // this.propertylike のように()ナシで呼べる
+      }
+    },
+    mounted () {
+    },
+    methods: {
+      function somethung() {
+      }
+    }
+  }
+</script>
+
+<style scoped>
+</style>

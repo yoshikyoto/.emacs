@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: hashitem
+# key: hashitem
+# --
+'$1': $1

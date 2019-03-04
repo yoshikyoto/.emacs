@@ -16,6 +16,7 @@
 (load "config/mykeybind")
 (load "config/language")
 (load "config/mouse")
+(load "config/coding")
 (load "config/whitespace")
 (load "config/indent")
 (load "config/javascript")
@@ -24,9 +25,10 @@
 (load "package/auto-complete")
 (load "package/yasnippet")
 (load "package/flycheck")
+(load "package/aspell") ;; flycheckに依存
 (load "package/undo-tree")
 (load "package/neotree")
-(load "package/magit")
+;; (load "package/magit")
 (load "package/helm-ls-git")
 (load "package/web-mode")
 (load "package/hlinum")
@@ -39,6 +41,7 @@
 (load "package/auto-complete-clang")
 (load "package/quickrun")
 (load "package/go-mode")
+(load "package/vue-mode")
 ;; editorconfigをロードすることで、各modeの設定をeditorconfigで上書き
 (load "package/editorconfig")
 (load "function/eval-init")

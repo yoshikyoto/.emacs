@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: predump
+# key: predump
+# --
+echo '<pre>';
+var_dump($1);
+echo '</pre>';

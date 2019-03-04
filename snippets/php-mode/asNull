@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: asNull
+# key: asNull
+# --
+$this->assertNull($1);
