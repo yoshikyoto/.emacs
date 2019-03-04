@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pretag
+# key: pretag
+# --
+<pre>$0</pre>

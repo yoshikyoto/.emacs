@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inputtext
+# key: inputtext
+# --
+<input type="text">

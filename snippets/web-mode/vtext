@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: vtext
+# key: vtext
+# --
+v-text="$1"
