@@ -32,4 +32,8 @@
 ;; M-<, M-> を使えば問題ないかなってことでQuickrunに
 (global-set-key (kbd "M-r") 'quickrun)
 
+;; C-c r のほうがわかりやすいかもって思ったのでこっちも追加
+;; （C-c 以下にカスタマイズしたキーバインドを置いていく方針）
+(global-set-key (kbd "C-c r") 'quickrun)
+
 ;;; quickrun-init.el ends here
