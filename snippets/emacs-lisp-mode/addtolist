@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: addtolist
+# key: addtolist
+# --
+(add-to-list 'auto-mode-alist '("\\.${1:ext}$" . $2-mode))
