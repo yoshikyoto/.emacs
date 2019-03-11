@@ -77,6 +77,12 @@ emacs --version
 GNU Emacs 24.5
 ```
 
+### gnutlsがないと言われた場合
+
+```sh
+sudo yum install gnutls-devel
+```
+
 #### インストールしたバージョンと異なる場合
 
 brewやyumですでにEmacsがインストールされていた、などの可能性があります。
