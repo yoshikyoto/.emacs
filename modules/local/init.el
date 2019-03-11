@@ -20,4 +20,4 @@
 ;; (add-hook 'php-mode-hook 'smile-php-mode) ;php-modeの時にSmileモード起動
 ;; (load "local/smile/local-vagrant")
 
-;;; local-config.el ends here
+;;; init.el ends here
