@@ -20,7 +20,7 @@ Emacsの設定たち。
 
 ## Usage
 
-```
+```sh
 cd ~/
 git clone git@github.com:yoshikyoto/.emacs.git .emacs.d
 cd .emacs.d
@@ -34,13 +34,13 @@ git submodule update
 
 #### CentOS（Red Hat系）
 
-```
+```sh
 sudo yum -y install gcc make ncurses-devel wget
 ```
 
 #### Ubuntu（Debian系）
 
-```
+```sh
 sudo apt-get install gcc make ncurses-dev wget
 ```
 
@@ -58,7 +58,7 @@ sudo apt-get install gcc make ncurses-dev wget
 
 ダウンロードしてインストールします。例えば、24.5 をインストールしたい場合はこうです。
 
-```
+```sh
 $ wget http://ftp.jaist.ac.jp/pub/GNU/emacs/emacs-24.5.tar.gz
 $ tar xvf emacs-24.5.tar.gz
 $ cd emacs-24.5
@@ -72,7 +72,7 @@ $ sudo make install
 
 バージョンを確認し、正しくインストールされたかどうかを確認してください。
 
-```
+```sh
 emacs --version
 GNU Emacs 24.5
 ```
@@ -88,7 +88,7 @@ sudo yum install gnutls-devel
 brewやyumですでにEmacsがインストールされていた、などの可能性があります。
 アンインストールしてから再度ビルド＆インストールし直すなどをお試しください。
 
-```
+```sh
 brew uninstall emacs
 ```
 
@@ -96,7 +96,7 @@ brew uninstall emacs
 
 Emacsをホームディレクトリ以下にビルドし、PATHを通すようにすると良いでしょう。
 
-```
+```sh
 $ tar xvf emacs-24.5.tar.gz
 $ cd emacs-24.5
 $ ./configure --prefix=$HOME/emacs
@@ -108,6 +108,6 @@ $ make install
 （ビルドするディレクトリはどこでも構いません）
 以下のコマンドを `.zshrc` や `.bashrc` に追記しましょう。
 
-```
+```sh
 export PATH=$PATH:~/emacs/bin
 ```
