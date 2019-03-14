@@ -56,12 +56,12 @@ sudo apt-get install gcc make ncurses-dev wget
 
 * http://ftp.jaist.ac.jp/pub/GNU/emacs/ 
 
-ダウンロードしてインストールします。例えば、24.5 をインストールしたい場合はこうです。
+ダウンロードしてインストールします。例えば、26.1 をインストールしたい場合はこうです。
 
 ```sh
 $ wget http://ftp.jaist.ac.jp/pub/GNU/emacs/emacs-24.5.tar.gz
-$ tar xvf emacs-24.5.tar.gz
-$ cd emacs-24.5
+$ tar xvf emacs-26.1.tar.gz
+$ cd emacs-26.1
 $ ./configure
 $ sudo make
 $ sudo make install
@@ -74,7 +74,7 @@ $ sudo make install
 
 ```sh
 emacs --version
-GNU Emacs 24.5
+GNU Emacs 26.1
 ```
 
 ### gnutlsがないと言われた場合
@@ -97,8 +97,8 @@ brew uninstall emacs
 Emacsをホームディレクトリ以下にビルドし、PATHを通すようにすると良いでしょう。
 
 ```sh
-$ tar xvf emacs-24.5.tar.gz
-$ cd emacs-24.5
+$ tar xvf emacs-26.1.tar.gz
+$ cd emacs-26.1
 $ ./configure --prefix=$HOME/emacs
 $ make
 $ make install
