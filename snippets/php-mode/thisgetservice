@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: thisgetservice
+# key: thisgetservice
+# --
+$this->$1 = $context->getService($1::class);
