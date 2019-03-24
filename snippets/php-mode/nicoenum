@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: nicoenum
+# key: nicoenum
+# --
+<?php
+
+namespace ;
+
+use MyCLabs\Enum\Enum;
+
+/**
+ * @method static $1 METHOD_NAME()
+ */
+class $1 extends ENUM {
+	const METHOD_NAME = 'methodName';
+}
