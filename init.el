@@ -25,6 +25,7 @@
 (load "package/smart-cursor-color")
 (load "package/symbol-overlay")
 (load "package/auto-complete")
+(load "package/git-complete")
 (load "package/yasnippet")
 (load "package/flycheck")
 (load "package/aspell") ;; flycheckに依存
