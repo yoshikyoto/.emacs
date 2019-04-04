@@ -65,7 +65,7 @@
   (async-shell-command
    (concat
     "cd ~ && "
-    "phpunit --bootstrap=core/test/phpunit/phpunit.php "
+    "~/core/infra/vendor/bin/phpunit --bootstrap=core/test/phpunit/phpunit.php "
     buffer-file-name)))
 
 ;; nvapi版
@@ -86,14 +86,31 @@
       (nvapi-phpunit)
     (core-phpunit)))
 
+;; core版 単体の関数だけ実行してくれる
+(defun core-phpunit-function ()
+  (interactive)
+  (async-shell-command
+   (concat
+    "cd ~ && "
+    "~/core/infra/vendor/bin/phpunit --bootstrap=core/test/phpunit/phpunit.php "
+    "--filter=\""
+    (php-current-public-method-name)
+    "\" "
+    buffer-file-name)))
+
 ;;;;;;;;;;;;;;;;;;;;;;
 ;; キーバインドの追加
 
 ;; C-c C-t で該当するコードのテストに飛ぶ
 (define-key nico-php-mode-map (kbd "C-c C-t") 'core-phpunit-find)
+
 ;; C-c C-u でユニットテストを実行
 ;; もともと php-mode では c-up-conditional というのがバインドされているっぽいが
 ;; 特に使ったこと無いので上書きしてしまう
 (define-key nico-php-mode-map (kbd "C-c C-u") 'nico-phpunit)
+
+;; C-c C-y でフォーカスが合っている function のテストを実行
+;; C-c C-y はphp-modeでは無いもバインドされていなかった
+(define-key nico-php-mode-map (kbd "C-c C-y") 'nico-phpunit-function)
 
 ;;; nico-php-mode.el ends here
