@@ -23,6 +23,7 @@
 (load "config/ruby")
 
 (load "package/smart-cursor-color")
+(load "package/symbol-overlay")
 (load "package/auto-complete")
 (load "package/yasnippet")
 (load "package/flycheck")
