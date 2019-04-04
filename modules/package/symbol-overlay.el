@@ -2,6 +2,8 @@
 
 ;;; Commentary:
 
+;; カーソルを重ねた時に同じシンボル（変数名など）をハイライトしてくれる機能
+
 ;; wolray/symbol-overlay: Highlight symbols with keymap-enabled overlays
 ;;  - https://github.com/wolray/symbol-overlay
 
