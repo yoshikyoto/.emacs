@@ -21,6 +21,7 @@
 (load "config/indent")
 (load "config/javascript")
 (load "config/ruby")
+
 (load "package/smart-cursor-color")
 (load "package/auto-complete")
 (load "package/yasnippet")
@@ -30,10 +31,15 @@
 (load "package/neotree")
 ;; (load "package/magit")
 (load "package/helm-ls-git")
+(load "package/dumb-jump")
 (load "package/web-mode")
 (load "package/hlinum")
 (load "package/php-mode")
-(load "package/ac-php")
+
+;; ac-php は コード補完などとのかみ合わせが悪かったため（設定がうまくできてなかっただけ？）
+;; コードジャンプにはdumb-jumpを利用し、ac-phpは使わないことにした
+;; (load "package/ac-php")
+
 (load "package/scala-mode")
 (load "package/dart-mode")
 (load "package/kotlin-mode")
@@ -61,7 +67,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(global-linum-mode t)
- '(package-selected-packages (quote (dart-mode smart-cursor-color let-alist)))
+ '(package-selected-packages (quote (dumb-jump dart-mode smart-cursor-color let-alist)))
  '(safe-local-variable-values (quote ((php-project-root . git)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

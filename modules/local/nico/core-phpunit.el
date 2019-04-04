@@ -1,18 +1,6 @@
 ;; TODO php-modeの機能で関数名を取るようにしたうえで nico-php-mode の方に移動する
 ;; http://www.utakata.work/entry/20181201/1543629600
 
-(defun core-phpunit-function ()
-  (interactive)
-  (async-shell-command
-   (concat
-    "cd ~ && "
-    "phpunit --bootstrap=core/test/phpunit/phpunit.php "
-    "--filter=\""
-    (php-current-public-method-name)
-    "\" "
-    buffer-file-name)))
-
-
 (defun get-buffer-file-name ()
   (interactive)
   (message buffer-file-name))

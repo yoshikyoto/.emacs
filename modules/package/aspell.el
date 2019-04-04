@@ -34,4 +34,13 @@
 ;; とりあえず常に有効にしておく
 (setq-default flyspell-mode 1)
 
+;; CamelCase でもいい感じに spellcheck してくれる設定を追加
+;; See: https://stackoverflow.com/a/24878128/8888451
+(eval-after-load "ispell"
+  '(add-to-list 'ispell-skip-region-alist '("[^\000-\377]+")))
+(setq ispell-program-name "aspell"
+  ispell-extra-args
+  '("--sug-mode=ultra" "--lang=en_US" "--run-together" "--run-together-limit=5" "--run-together-min=2"))
+
+
 ;;; aspell.el ends here
