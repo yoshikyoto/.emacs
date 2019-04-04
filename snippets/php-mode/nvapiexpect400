@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: nvapiexpect400
+# key: nvapiexpect400
+# --
+[
+	'meta' => [
+		'status' => 400,
+		'errorCode' => '${1:INVALID_PARAMETER}',
+	],
+];

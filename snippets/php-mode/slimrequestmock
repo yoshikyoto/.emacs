@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: slimrequestmock
+# key: slimrequestmock
+# --
+Request::createFromEnvironment(Environment::mock());

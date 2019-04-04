@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: nvapiexpect403
+# key: nvapiexpect403
+# --
+[
+	'meta' => [
+		'status' => 403,
+		'errorCode' => '${1:FORBIDDEN}',
+	],
+];
