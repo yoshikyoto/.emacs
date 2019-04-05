@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: keydefine
+# key: keydefine
+# --
+(define-key $1-mode-map (kbd "$2") '${3:function-name})
