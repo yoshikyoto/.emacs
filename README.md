@@ -7,11 +7,23 @@ Emacsの設定たち。
 
 ## Dependency
 
+* el-get
 * aspell
   * Mac: `brew install aspell --lang=en`
   * CentOS: `yum install aspell-en`
 * ag
   * インストール方法は dumb-jump.el を参照
+
+
+## Usage
+
+```sh
+cd ~
+git clone git@github.com:yoshikyoto/.emacs.git .emacs.d
+cd .emacs.d
+git submodule init
+git submodule update
+```
 
 ## ディレクトリ構成
 
@@ -20,19 +32,10 @@ Emacsの設定たち。
   *
 * snippets - yasnippetで作成されたスニペットたち
 
-## dependency
+## Add submodule
 
-* el-get
 
-## Usage
 
-```sh
-cd ~/
-git clone git@github.com:yoshikyoto/.emacs.git .emacs.d
-cd .emacs.d
-git submodule init
-git submodule update
-```
 
 ## Emacsのインストール方法
 
@@ -117,3 +120,8 @@ $ make install
 ```sh
 export PATH=$PATH:~/emacs/bin
 ```
+
+## 参考ページ
+
+- [Emacsの補完 & 検索を超強化する - Qiita](https://qiita.com/blue0513/items/c0dc35a880170997c3f5)
+- [EmacsでWebサービスを開発して8ヶ月が経ちました - エムスリーテックブログ](https://www.m3tech.blog/entry/emacs-web-service)

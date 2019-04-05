@@ -28,7 +28,6 @@
 (load "package/git-complete")
 (load "package/yasnippet")
 (load "package/flycheck")
-(load "package/aspell") ;; flycheckに依存
 (load "package/undo-tree")
 (load "package/neotree")
 ;; (load "package/magit")
@@ -50,6 +49,10 @@
 (load "package/quickrun")
 (load "package/go-mode")
 (load "package/vue-mode")
+
+;; flycheckに依存している
+(load "package/aspell")
+
 ;; editorconfigをロードすることで、各modeの設定をeditorconfigで上書き
 (load "package/editorconfig")
 (load "function/eval-init")

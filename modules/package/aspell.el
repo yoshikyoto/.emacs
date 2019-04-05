@@ -39,8 +39,10 @@
 ;; --run-together を指定してやることで、 userData のような単語をつなげて生成してくれるやつも
 ;; いい感じにスペルチェックしてくれるが、ちょっとだけ判定が弱くなる。
 ;;
-;; 例えば、 `followerrCount` などは通り抜けてしまう。
-;; `follower` `r` `count` の3つの単語と判定されるからだろうか...
+;; 例えば、 `redis` という単語は固有名詞のハズなのに通り抜けてしまう
+;; `red` `is` のように2単語として判定されてしまうからな気がする
+;; 一旦このままで運用してみてなにか問題があったら、--run-togeter 関係のオプションを削除して
+;; 辞書登録によって複合単語はカバーすることにする
 ;;
 ;; 以下のブログでCamelCase でもいい感じに spellcheck してくれる設定が紹介されている
 ;; - https://stackoverflow.com/a/24878128/8888451
@@ -96,7 +98,10 @@
  'flyspell-mode-hook
  '(lambda ()
     ;; C-c C-c でバッファのスペルチェック
+    ;; 本当は勝手にスペルチェックされるようにしてほしいが、うまく行かなかった。
+    ;; ここのhookでflyspell-bufferを呼べばもしかしてうまくいく？
     (global-set-key (kbd "C-c C-v") 'flyspell-buffer)
+
     ;; C-c C-g でフォーカスしている単語を辞書に登録
     (global-set-key (kbd "C-c C-g") 'my-flyspell-save-word)
     ))

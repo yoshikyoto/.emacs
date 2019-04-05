@@ -38,6 +38,7 @@
 
 ;; replace-regexp-in-string は、regexp じゃないものは存在しないらしい。
 (defun core-phpunit-find ()
+  "Open nico core php unit test file."
   (interactive)
   (find-file
    ;; .php は Test.php に置き換える
@@ -61,6 +62,7 @@
 
 ;; nicolib版
 (defun core-phpunit ()
+  "Execute nico core phpunit command."
   (interactive)
   (async-shell-command
    (concat
@@ -70,6 +72,7 @@
 
 ;; nvapi版
 (defun nvapi-phpunit ()
+  "Execute nvapi phpunit command."
   (interactive)
   (async-shell-command
    (concat
@@ -79,6 +82,7 @@
 
 ;; いい感じにnvapi版とnicolib版を呼び分けるやつ
 (defun nico-phpunit ()
+  "Execute nico core or nvapi phpunit command."
   (interactive)
   ;; ファイル（ディレクトリ）にnvapi/が含まれていたらnvapiのテストと判断
   ;; そうでなければnicolibのテストと判断
@@ -88,6 +92,7 @@
 
 ;; core版 単体の関数だけ実行してくれる
 (defun core-phpunit-function ()
+  "Execute nico core phpunit test on current function."
   (interactive)
   (async-shell-command
    (concat
