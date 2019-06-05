@@ -59,6 +59,30 @@ sudo apt-get install gcc make ncurses-dev wget
 * wgetがなければ `brew install wget`
 * brewがインストールされていることは前提とします
 
+```sh
+configure: error: The following required libraries were not found:
+     gnutls
+```
+
+と言われたら
+
+```sh
+brew install pkg-config
+brew install gnutls
+```
+
+```sh
+xml.c:23:10: fatal error: 'libxml/tree.h' file not found
+#include <libxml/tree.h>
+         ^~~~~~~~~~~~~~~
+1 error generated.
+```
+の場合
+
+* https://masutaka.net/chalow/2014-10-25-1.html
+
+でよい
+
 ### ソースをダウンロードしてビルド
 
 以下のURLからビルドしたいEmacsのバージョンのアーカイブのURLを探します。
