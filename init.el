@@ -6,12 +6,13 @@
 ;; load-path の設定
 
 (when load-file-name (setq user-emacs-directory (file-name-directory load-file-name)))
-(add-to-list 'load-path (locate-user-emacs-file "modules"))
+(add-to-list 'load-path (locate-user-emacs-file "settings"))
 
 ;;; パッケージ管理 el-get の設定 https://github.com/dimitri/el-get
 (add-to-list 'load-path (locate-user-emacs-file "el-get"))
 (load "el-get")
-(setq el-get-dir (locate-user-emacs-file "elisp")) ; el-getでダウンロードしたパッケージが入る
+;; el-get がダウンロードしてきた elisp が入るディレクトリ
+(setq el-get-dir (locate-user-emacs-file "modules")) ; el-getでダウンロードしたパッケージが入る
 
 (load "config/mykeybind")
 (load "config/language")

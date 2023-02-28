@@ -1,7 +1,7 @@
 .*
 ac-comphist.dat
 cpp-header
-elisp
+modules
 elpa
 eshell/history
 tramp
