@@ -27,10 +27,9 @@ git submodule update
 
 ## ディレクトリ構成
 
-* bin - 便利なシェルスクリプトとかはここに
-* modules - 個人的な設定や、パッケージのインストールなどのelispを置く。詳細は `modules/README.md` を参照
-  *
-* snippets - yasnippetで作成されたスニペットたち
+* bin - 便利なシェルスクリプトなどを置く
+* settings - emacs の設定が定義された elisp を置く
+* snippets - yasnippetで作成されたスニペットが配置される
 
 ## Add submodule
 

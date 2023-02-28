@@ -4,7 +4,7 @@
 ;;; Code:
 
 ;; load-path の設定
-
+;; (loca "xxx") とすると、 settings ディレクトリ以下から elisp を探す
 (when load-file-name (setq user-emacs-directory (file-name-directory load-file-name)))
 (add-to-list 'load-path (locate-user-emacs-file "settings"))
 
@@ -14,7 +14,7 @@
 ;; el-get がダウンロードしてきた elisp が入るディレクトリ
 (setq el-get-dir (locate-user-emacs-file "modules")) ; el-getでダウンロードしたパッケージが入る
 
-(load "config/mykeybind")
+(load "keybind-global")
 (load "config/language")
 (load "config/mouse")
 (load "config/coding")
